@@ -1,6 +1,12 @@
 # mac-copy-link-to-clipboard
 
-A command line utility to accept the link text and url and create a clickable html link in the clipboard. With some automation, this allows to prepare a link so users can paste it into Google Doc or Slack.
+A Mac OS command line app to prepare a clickable html link in the clipboard.
+
+- It accepts the link text and url as input parameters
+- Creates a clickable html link
+- Puts the link in the clipboard
+
+Now, users can prepare a link and paste it into Google Docs or Slack with some automation.
 
 # Usage
 
