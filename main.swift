@@ -8,12 +8,12 @@ if args.count == 3 {
     let linkUrl = args[2]
     
     let htmlText = "<a href='\(linkUrl)'>\(linkText)</a>"
-    let htmlData = htmlText.data(using: .utf8)
     
     let pasteBoard = NSPasteboard.general
     pasteBoard.clearContents()
-    pasteBoard.setData(htmlData, forType: .html)
-  
+    pasteBoard.setData(htmlText.data(using: .utf8), forType: .html)
+    pasteBoard.setData(linkText.data(using: .utf8), forType: .string)
+
     print("The \"\(htmlText)\" is copied to clipboard")
 } else {
     print("Error! Expecting two arguments: <link text> <link url>")
