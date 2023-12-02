@@ -1,0 +1,1 @@
+# mac-copy-link-to-clipboard
